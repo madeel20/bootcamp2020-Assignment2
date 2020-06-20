@@ -26,11 +26,9 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v1.4.2
       with:
-          node-version: 12
-    - name: action-yarn
-      uses: comchangs/action-yarn@v0.1-beta  
+          node-version: 12 
     - name: build project
-      run: yarn build
+      run: npm run build
     - name: Install Surge
       run: npm install -g surge
     - name: Run surge
