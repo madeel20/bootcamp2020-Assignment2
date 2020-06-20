@@ -30,7 +30,7 @@ jobs:
     - name: action-yarn
       uses: comchangs/action-yarn@v0.1-beta  
     - name: build project
-      uses: yarn build
+      run: yarn build
     - name: Install Surge
       run: npm install -g surge
     - name: Run surge
